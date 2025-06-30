@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+        <style>
+            td{
+                background-color: aliceblue;
+            }
+    
+            body{
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+       <table align="center" border="1">
+        <tr align="center" style="background-color: lightblue;">
+            <td width="150">Course id</td>
+            <td width="150">Course name</td>
+            <td width="150">Trainer</td>
+            <td width="150">Duration in weeks</td>
+        </tr>
+
+        <tbody id="coursetable" align="center"></tbody>
+       </table>
+
+       <script type="text/javascript">
+        window.onload = function(){
+            showcourses();
+        };
+       </script>
+    </body>
+</html>

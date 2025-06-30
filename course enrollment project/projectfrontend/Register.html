@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Register a course</title>
+        <style>
+            body {
+                background-color: black;
+                text-align: center; 
+            }
+
+            form {
+                margin:  auto;
+                padding: 20px;
+                width: 400px; 
+                background-color: #fff;
+            }
+
+            input, select, button {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white; 
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer; 
+            }
+
+            button:hover {
+                background-color: #104212; 
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h2 style="color: yellow;">Register a course</h2>
+        <form action="http://localhost:8080/courses/register" method="post">
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name">
+             <br>
+            <label for="email">Enter your emailId:</label>
+            <input type="email" name="email">
+             <br>
+            <label for="coursename">choose your coursename</label>
+             <select id="course" name="coursename">
+                <option value="java master course">java master course</option>
+                <option value="c">c</option>
+                <option value="c++">c++
+                </option>
+             </select>
+             <br>
+             <br>
+             <button type="submit">submit</button>
+
+
+        </form>
+    </body>
+</html>
